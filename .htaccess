@@ -1,0 +1,65 @@
+RewriteEngine on
+Options -Multiviews
+
+# Security header Enable HSTS
+#Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+# DA WWW A NON-WWW (Aruba, redirect alivello di hosting)
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# DA HTTP A HTTPS
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# SLASH FINALE NELL'URL
+RewriteCond %{REQUEST_URI} /+[^\.]+$
+RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+
+# PROTECT DB
+RewriteRule ^app-data/db.sqlite$ index.php [L,R=301]
+
+# PROTECT ALL DATA
+# RewriteRule ^app-data/(.*)$ index.php [L,R=301]
+
+# LANGUAGE ROUTER
+RewriteRule ^(it|en)/(.*)?$ $2?lang=$1 [QSA,NC,DPI]
+
+# MANUTENZIONE
+RewriteRule ^maintenance/$ app-admin/_maintenance.php [QSA,NC,L]
+
+# RESET PASSWORD AREA AMMINISTRATIVA
+RewriteRule ^app-admin/operatori-password-reset/(.*)/$  app-admin/operatori-password-reset-confirm.php?ticket=$1 [QSA,NC,L]
+
+# PAGINA 404
+ErrorDocument 404 /app-public/pages/404.php
+
+# PAGINE STATICHE
+RewriteRule ^(index\.php)?$ app-public/pages/index.php [QSA,NC,L]
+RewriteRule ^home/$ app-public/pages/home.php [QSA,NC,L]
+RewriteRule ^contatti/$ app-public/pages/contatti.php [QSA,NC,L]
+RewriteRule ^acquista/$ app-public/pages/acquista.php [QSA,NC,L]
+RewriteRule ^carrello/$ app-public/pages/shop-carrello.php [QSA,NC,L]
+RewriteRule ^condizioni-di-vendita/$ app-public/pages/shop-condizioni-di-vendita.php [QSA,NC,L]
+RewriteRule ^ordini/$ app-public/pages/shop-ordini.php [QSA,NC,L]
+RewriteRule ^digital-download/(.*)/(.*)/(.*)/$ pages/shop-digital-download.php?order-id=$1&article-id=$2&variant-id=$3 [QSA,NC,L]
+
+# PAGINE DINAMICHE
+RewriteRule ^catalogo/(.*)/(.*)/(.*)/ pages/shop-articoli-detail.php?id=$2&variant=$3 [QSA,NC,L]
+RewriteRule ^catalogo/(.*)/$ pages/shop-articoli.php?cat=$1 [QSA,NC,L]
+RewriteRule ^catalogo/$ pages/shop-articoli.php [QSA,NC,L]
+
+RewriteCond %{REQUEST_URI} !app-public [NC]
+RewriteCond %{REQUEST_URI} !app-admin [NC]
+RewriteCond %{REQUEST_URI} !app-data [NC]
+RewriteCond %{REQUEST_URI} !app-test [NC]
+RewriteRule ^(.*)$ app-public/$1 [QSA,NC,L]
+
+# Disable Directory listings
+IndexIgnore *
+
+# Custom default index page
+# DirectoryIndex index.html
+
+

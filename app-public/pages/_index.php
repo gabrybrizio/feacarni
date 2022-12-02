@@ -1,0 +1,1 @@
+<?php     require __DIR__ . '/../../app/init.php';    page::title('Home');    require __DIR__ . '/../inc/header.php';?><h1>Home</h1><?php 	require __DIR__ . '/../inc/footer.php';?>

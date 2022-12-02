@@ -1,0 +1,38 @@
+<?php
+
+$settings = array (
+    'strict' => true,
+    'debug' => false,
+
+    'baseurl' => 'https://test.operativetrainingpmi.com/',
+
+    'sp' => array (
+        'entityId' => 'https://test.operativetrainingpmi.com/',
+        'assertionConsumerService' => array (
+            'url' => 'https://test.operativetrainingpmi.com/sso.php?login-response',
+            'binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+        ),
+        'singleLogoutService' => array (
+            'url' => 'https://test.operativetrainingpmi.com/sso.php?logout-response',
+            'binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+        ),
+        'NameIDFormat' => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
+        'x509cert' => '',
+        'privateKey' => '',
+    ),
+
+    'idp' => array (
+        'entityId' => 'https://sts.windows.net/1b3669b1-64c0-4588-b3a3-409437f391e4/',
+        'singleSignOnService' => array (
+            'url' => 'https://login.microsoftonline.com/1b3669b1-64c0-4588-b3a3-409437f391e4/saml2',
+            'binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+        ),
+        'singleLogoutService' => array (
+            //'url' => 'https://login.microsoftonline.com/common/wsfederation?wa=wsignout1.0',
+            'url' => 'https://login.microsoftonline.com/1b3669b1-64c0-4588-b3a3-409437f391e4/saml2',
+            'responseUrl' => 'https://test.operativetrainingpmi.com/sso.php?logout-response',
+            'binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+        ),
+        'x509cert' => 'MIIC8DCCAdigAwIBAgIQSf1Y1K6J45JL61pSaGsouDANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQD EylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yMDEwMjcxMDU1      MTFaFw0yMzEwMjcwOTU1MDhaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQg        U1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2vRbBeBlXMqY        pilADVHl3SPg+f1/bVBQHXhhGCGUmU5XGAIB4QAbozljuCjMRqvKcKQCAu7orV9sjSY/GwdhpraS        GoHoAsQ1dwdAZEL3EdnmlDkBzfJ9ddYeXBdtMRkb5cvEKo+b3B1SWdR3PTOw5w1KUsRGKBYTYPT9        oU39l68AIyCsjVj6fLBH6HhFKpAIPnG9FZr2zNUdMSv+Kd6Z6E+EVyCMcefVadTZZmLxXxW8mngZ        KdyU6DyI4DKGvLRH3vW1CTfDwCCVlWGqOFjrvreeaU7cwMia4zGLzUSDdFdCoAsnoRsCt2O8VQyo        jhbPLEd6lvg1c/pGuvMo0dn6KQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQA0FK99nfaaagBoOaAL        wKBLDKymbD4BDjAT1tgszVJM2jxJ+hXRfTQlOLNZG20JHMefPj5F7et9XgkDeKsBJfshoJEyWhsb        3biHuEcJR7EuOI/4ZtHkGWMFfH4qIGDCIFBaMVhxXZtkwHetgE/5bt1H/GUzTl1xC/duorj2LOFH LGPsOoVH1o9h0YMvFY1KATzxB7b514x3ugTjYK4qgnAu2c0x3cHXXmxeofWhykltT9TjWgpvr5m8 jTOXjWX5x7Earhxmg6S7MM8GaZe0m92GD/07JDaf+M3QpJbLJ7yGTHaGvi5EYSfvbWMsSTVmEzy1 chFcdJ2nFFVBMP3/KnCQ',
+    ),
+);

@@ -1,0 +1,135 @@
+@red: #9a201d;
+
+/* RESET */
+*,*:before,*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,p,ul,ol {
+	display: block;
+	font-size: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+	image-rendering: -webkit-optimize-contrast;
+}
+
+a {
+    color: inherit;
+    transition: .2s;
+    outline:0;
+	cursor:pointer;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	line-height: 20px;
+	color: #fff;
+	font-weight:400;
+	background:#000;
+	text-align:center;
+}
+
+.btn{
+	display:inline-flex;
+	justify-content: center;
+	align-items: center;
+	background-color: @red;
+	color:#fff;
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+    outline: 0;
+	border: 3px solid transparent;
+	position:relative;
+	overflow:hidden;
+	font-family: inherit;
+	font-size:15px;
+	line-height:15px;
+	padding: 7px 15px;
+	border-radius: 3px;
+	margin-top:50px;
+
+	&:hover{
+		background-color: #eeb073;
+	}
+}
+
+/* ATOMS */
+b{font-weight:700}
+
+/* GRAPHIC */
+.header{
+	height:75px;
+	background-color: @red;
+	position: relative;
+}
+
+.logo{
+	position:absolute;
+	display: block;
+	max-width:105px;
+	bottom:-55px;
+	left:0;
+	right:0;
+	margin:auto;
+}
+
+.la-carne{
+	display: block;
+	max-width:540px;
+	margin:auto;
+	width:100%;
+}
+
+.contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap:wrap;
+	width:300px;
+	margin:-70px auto 0 auto;
+	font-weight:700;
+	text-decoration: none;
+
+	img{
+		display: block;
+		width:50px;
+		margin:3px 10px 0 0;
+	}
+
+	&:hover{
+		color:#ccc;
+	}
+}
+
+.footer{
+    padding: 30px 10px;
+    font-size: 12px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+	.footer{
+		padding: 30px 10px 20px 10px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.logo{
+		max-width:90px;
+		bottom:-35px;
+	}
+}

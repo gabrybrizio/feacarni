@@ -1,0 +1,70 @@
+[14-Nov-2022 18:00:17 Europe/Rome] PHP Fatal error:  Uncaught Exception: Required extension GD is not loaded. in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php:1073
+Stack trace:
+#0 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php(91): abeautifulsite\SimpleImage->load('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\lib\thumb.php(575): abeautifulsite\SimpleImage->__construct('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FeaCarni\app-public\pages\shop-articoli-detail.php(49): Thumb::src(Object(Media), 1280)
+#3 {main}
+  thrown in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php on line 1073
+[14-Nov-2022 18:00:32 Europe/Rome] PHP Fatal error:  Uncaught Exception: Required extension GD is not loaded. in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php:1073
+Stack trace:
+#0 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php(91): abeautifulsite\SimpleImage->load('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\lib\thumb.php(575): abeautifulsite\SimpleImage->__construct('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FeaCarni\app-public\pages\shop-articoli-detail.php(49): Thumb::src(Object(Media), 1280)
+#3 {main}
+  thrown in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php on line 1073
+[02-Dec-2022 16:19:01 Europe/Rome] PHP Fatal error:  Uncaught Exception: Required extension GD is not loaded. in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php:1073
+Stack trace:
+#0 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php(91): abeautifulsite\SimpleImage->load('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\lib\thumb.php(575): abeautifulsite\SimpleImage->__construct('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FeaCarni\app-admin\ajax\file-get.php(35): Thumb::src(Object(Media), 275)
+#3 {main}
+  thrown in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php on line 1073
+[02-Dec-2022 16:19:01 Europe/Rome] PHP Fatal error:  Uncaught Exception: Required extension GD is not loaded. in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php:1073
+Stack trace:
+#0 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php(91): abeautifulsite\SimpleImage->load('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\lib\thumb.php(575): abeautifulsite\SimpleImage->__construct('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FeaCarni\app-admin\ajax\file-get.php(131): Thumb::src(Object(Media), 75)
+#3 {main}
+  thrown in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php on line 1073
+[02-Dec-2022 16:19:11 Europe/Rome] PHP Fatal error:  Uncaught Exception: Required extension GD is not loaded. in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php:1073
+Stack trace:
+#0 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php(91): abeautifulsite\SimpleImage->load('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\lib\thumb.php(575): abeautifulsite\SimpleImage->__construct('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FeaCarni\app-admin\ajax\file-get.php(131): Thumb::src(Object(Media), 75)
+#3 {main}
+  thrown in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php on line 1073
+[02-Dec-2022 16:19:11 Europe/Rome] PHP Fatal error:  Uncaught Exception: Required extension GD is not loaded. in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php:1073
+Stack trace:
+#0 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php(91): abeautifulsite\SimpleImage->load('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\lib\thumb.php(575): abeautifulsite\SimpleImage->__construct('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FeaCarni\app-admin\ajax\file-get.php(35): Thumb::src(Object(Media), 275)
+#3 {main}
+  thrown in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php on line 1073
+[02-Dec-2022 16:19:29 Europe/Rome] PHP Fatal error:  Uncaught Exception: Required extension GD is not loaded. in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php:1073
+Stack trace:
+#0 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php(91): abeautifulsite\SimpleImage->load('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\lib\thumb.php(575): abeautifulsite\SimpleImage->__construct('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FeaCarni\app-admin\ajax\file-get.php(35): Thumb::src(Object(Media), 275)
+#3 {main}
+  thrown in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php on line 1073
+[02-Dec-2022 16:19:29 Europe/Rome] PHP Fatal error:  Uncaught Exception: Required extension GD is not loaded. in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php:1073
+Stack trace:
+#0 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php(91): abeautifulsite\SimpleImage->load('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\lib\thumb.php(575): abeautifulsite\SimpleImage->__construct('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FeaCarni\app-admin\ajax\file-get.php(131): Thumb::src(Object(Media), 75)
+#3 {main}
+  thrown in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php on line 1073
+[02-Dec-2022 16:29:52 Europe/Rome] PHP Fatal error:  Uncaught Exception: Required extension GD is not loaded. in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php:1073
+Stack trace:
+#0 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php(91): abeautifulsite\SimpleImage->load('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\lib\thumb.php(575): abeautifulsite\SimpleImage->__construct('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FeaCarni\app-admin\ajax\file-get.php(35): Thumb::src(Object(Media), 275)
+#3 {main}
+  thrown in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php on line 1073
+[02-Dec-2022 16:29:53 Europe/Rome] PHP Fatal error:  Uncaught Exception: Required extension GD is not loaded. in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php:1073
+Stack trace:
+#0 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php(91): abeautifulsite\SimpleImage->load('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\FeaCarni\dorothy\toolkit\lib\thumb.php(575): abeautifulsite\SimpleImage->__construct('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FeaCarni\app-admin\ajax\file-get.php(131): Thumb::src(Object(Media), 75)
+#3 {main}
+  thrown in C:\xampp\htdocs\FeaCarni\dorothy\toolkit\vendors\abeautifulsite\SimpleImage.php on line 1073
